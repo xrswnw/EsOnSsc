@@ -1,0 +1,1007 @@
+###############################################################################
+#
+# IAR ELF Linker V8.40.1.212/W32 for ARM                  09/Dec/2024  19:04:09
+# Copyright 2007-2019 IAR Systems AB.
+#
+#    Output file  =
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Exe\EsOnSsc.out
+#    Map file     =
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\List\EsOnSsc.map
+#    Command line =
+#        -f C:\Users\swnw\AppData\Local\Temp\EW71E6.tmp
+#        (E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\AnyID_Des.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\AnyID_ESC.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\AnyID_ESC_HL.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\AnyID_FRam.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\AnyID_FRam_App.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\AnyID_FRam_HL.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\AnyID_IO.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\AnyID_IO_HL.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\AnyID_Stdlib.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\AnyID_SysCfg.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\AnyID_SysTick.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\AnyID_SysTick_HL.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\AnyID_Uart_Receive.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\AnyID_WDG_HL.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\Application.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\bootloaderappl.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\bootmode.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\coeappl.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\ecatappl.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\ecatcoe.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\ecatfoe.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\ecatslv.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\foeappl.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\mailbox.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\main.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\misc.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\objdef.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\sdoserv.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\SSC-Device.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\startup_stm32f427x.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\stm32f4xx_adc.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\stm32f4xx_can.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\stm32f4xx_cec.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\stm32f4xx_crc.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\stm32f4xx_cryp.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\stm32f4xx_cryp_aes.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\stm32f4xx_cryp_des.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\stm32f4xx_cryp_tdes.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\stm32f4xx_dac.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\stm32f4xx_dbgmcu.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\stm32f4xx_dcmi.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\stm32f4xx_dfsdm.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\stm32f4xx_dma.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\stm32f4xx_dma2d.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\stm32f4xx_dsi.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\stm32f4xx_exti.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\stm32f4xx_flash.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\stm32f4xx_flash_ramfunc.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\stm32f4xx_gpio.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\stm32f4xx_hash.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\stm32f4xx_hash_md5.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\stm32f4xx_hash_sha1.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\stm32f4xx_i2c.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\stm32f4xx_it.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\stm32f4xx_iwdg.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\stm32f4xx_lptim.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\stm32f4xx_ltdc.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\stm32f4xx_pwr.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\stm32f4xx_qspi.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\stm32f4xx_rcc.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\stm32f4xx_rng.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\stm32f4xx_rtc.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\stm32f4xx_sai.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\stm32f4xx_sdio.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\stm32f4xx_spdifrx.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\stm32f4xx_spi.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\stm32f4xx_syscfg.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\stm32f4xx_tim.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\stm32f4xx_usart.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\stm32f4xx_wwdg.o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj\system_stm32f4xx.o
+#        --no_out_extension -o
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Exe\EsOnSsc.out --map
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\List\EsOnSsc.map --config
+#        E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\stm32f4xx_flash.icf
+#        --semihosting --entry __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__Heap_Handler  = DLMalloc
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The advanced heap was selected because the application calls memory
+allocation functions outside of system library functions, and there
+are calls to deallocation functions in the application.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at address 0x800'0000 { ro section .intvec };
+"P1":  place in [from 0x800'0000 to 0x80f'ffff] { ro };
+define block CSTACK with size = 16K, alignment = 8 { };
+define block HEAP with size = 8K, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2001'ffff] {
+          rw, block CSTACK, block HEAP };
+initialize by copy { rw };
+
+  Section            Kind         Address    Size  Object
+  -------            ----         -------    ----  ------
+"A0":                                       0x1ac
+  .intvec            ro code   0x800'0000   0x1ac  startup_stm32f427x.o [1]
+                             - 0x800'01ac   0x1ac
+
+"P1":                                      0x85f2
+  .text              ro code   0x800'01ac  0x19dc  ecatslv.o [1]
+  .text              ro code   0x800'1b88   0x314  AnyID_ESC.o [1]
+  .text              ro code   0x800'1e9c   0x668  ecatappl.o [1]
+  .text              ro code   0x800'2504   0x18c  SSC-Device.o [1]
+  .text              ro code   0x800'2690   0x7b8  mailbox.o [1]
+  .text              ro code   0x800'2e48    0x1e  bootmode.o [1]
+  .text              ro code   0x800'2e66    0x3a  zero_init3.o [4]
+  .text              ro code   0x800'2ea0    0x90  ecatcoe.o [1]
+  .text              ro code   0x800'2f30   0x294  AnyID_ESC_HL.o [1]
+  .text              ro code   0x800'31c4    0xac  stm32f4xx_exti.o [1]
+  .text              ro code   0x800'3270   0x404  Application.o [1]
+  .text              ro code   0x800'3674    0xac  stm32f4xx_tim.o [1]
+  .text              ro code   0x800'3720   0x198  stm32f4xx_rcc.o [1]
+  .text              ro code   0x800'38b8   0x134  stm32f4xx_gpio.o [1]
+  .text              ro code   0x800'39ec   0x336  coeappl.o [1]
+  .text              ro code   0x800'3d24  0x10fc  objdef.o [1]
+  .text              ro code   0x800'4e20  0x149c  dlmalloc.o [2]
+  .text              ro code   0x800'62bc     0x4  heaptramp0.o [2]
+  .text              ro code   0x800'62c0   0x35c  ecatfoe.o [1]
+  .text              ro code   0x800'661c    0x66  ABImemset.o [4]
+  .text              ro code   0x800'6684    0xa6  ABImemcpy.o [4]
+  .text              ro code   0x800'672c   0x64c  sdoserv.o [1]
+  .text              ro code   0x800'6d78    0x78  stm32f4xx_spi.o [1]
+  .text              ro code   0x800'6df0    0x58  stm32f4xx_syscfg.o [1]
+  .text              ro code   0x800'6e48    0x9c  misc.o [1]
+  .text              ro code   0x800'6ee4    0x68  memcmp.o [4]
+  .text              ro code   0x800'6f4c    0xbc  AnyID_IO.o [1]
+  .text              ro code   0x800'7008    0x36  strlen.o [4]
+  .text              ro code   0x800'703e     0x6  abort.o [2]
+  .text              ro code   0x800'7044    0x2c  xgetmemchunk.o [2]
+  .text              ro code   0x800'7070   0x228  bootloaderappl.o [1]
+  .text              ro code   0x800'7298   0x114  foeappl.o [1]
+  .text              ro code   0x800'73ac    0x9e  AnyID_IO_HL.o [1]
+  .text              ro code   0x800'744c    0x14  exit.o [5]
+  .text              ro code   0x800'7460   0x1b0  AnyID_SysCfg.o [1]
+  .text              ro code   0x800'7610    0xa4  AnyID_SysTick_HL.o [1]
+  .text              ro code   0x800'76b4   0x124  system_stm32f4xx.o [1]
+  .rodata            const     0x800'77d8   0x100  coeappl.o [1]
+  .rodata            const     0x800'78d8   0x100  coeappl.o [1]
+  .rodata            const     0x800'79d8    0xdc  coeappl.o [1]
+  .rodata            const     0x800'7ab4    0xdc  coeappl.o [1]
+  .rodata            const     0x800'7b90    0xc8  coeappl.o [1]
+  .rodata            const     0x800'7c58    0x80  AnyID_IO_HL.o [1]
+  .rodata            const     0x800'7cd8    0x80  AnyID_IO_HL.o [1]
+  .rodata            const     0x800'7d58    0x78  sdoserv.o [1]
+  .text              ro code   0x800'7dd0    0x78  lz77_init_single.o [4]
+  .rodata            const     0x800'7e48    0x68  coeappl.o [1]
+  .rodata            const     0x800'7eb0    0x68  coeappl.o [1]
+  .rodata            const     0x800'7f18    0x68  coeappl.o [1]
+  .rodata            const     0x800'7f80    0x68  coeappl.o [1]
+  .rodata            const     0x800'7fe8    0x64  coeappl.o [1]
+  .rodata            const     0x800'804c    0x64  coeappl.o [1]
+  .rodata            const     0x800'80b0    0x60  coeappl.o [1]
+  .rodata            const     0x800'8110    0x40  coeappl.o [1]
+  .rodata            const     0x800'8150    0x3c  coeappl.o [1]
+  .text              ro code   0x800'818c    0x38  stm32f4xx_it.o [1]
+  .text              ro code   0x800'81c4    0x28  data_init.o [4]
+  .text              ro code   0x800'81ec    0x22  fpinit_M.o [3]
+  .iar.init_table    const     0x800'8210    0x20  - Linker created -
+  .rodata            const     0x800'8230    0x20  coeappl.o [1]
+  .rodata            const     0x800'8250    0x20  coeappl.o [1]
+  .rodata            const     0x800'8270    0x20  objdef.o [1]
+  .text              ro code   0x800'8290    0x1e  cmain.o [4]
+  .text              ro code   0x800'82ae     0x4  low_level_init.o [2]
+  .text              ro code   0x800'82b2    0x10  main.o [1]
+  .text              ro code   0x800'82c2     0x4  exit.o [2]
+  .text              ro code   0x800'82c8     0xa  cexit.o [4]
+  .rodata            const     0x800'82d4    0x1c  coeappl.o [1]
+  .rodata            const     0x800'82f0    0x1c  coeappl.o [1]
+  .rodata            const     0x800'830c    0x14  coeappl.o [1]
+  .rodata            const     0x800'8320    0x14  coeappl.o [1]
+  .rodata            const     0x800'8334    0x14  coeappl.o [1]
+  .rodata            const     0x800'8348    0x14  coeappl.o [1]
+  .rodata            const     0x800'835c    0x14  coeappl.o [1]
+  .rodata            const     0x800'8370    0x10  coeappl.o [1]
+  .text              ro code   0x800'8380    0x10  startup_stm32f427x.o [1]
+  .rodata            const     0x800'8390     0xc  coeappl.o [1]
+  .rodata            const     0x800'839c     0xc  coeappl.o [1]
+  .rodata            const     0x800'83a8     0xc  coeappl.o [1]
+  .rodata            const     0x800'83b4     0xc  coeappl.o [1]
+  .rodata            const     0x800'83c0     0xc  coeappl.o [1]
+  .text              ro code   0x800'83cc     0xc  cstartup_M.o [4]
+  .rodata            const     0x800'83d8     0x8  AnyID_ESC_HL.o [1]
+  .rodata            const     0x800'83e0     0x8  AnyID_ESC_HL.o [1]
+  .rodata            const     0x800'83e8     0x8  AnyID_ESC_HL.o [1]
+  .rodata            const     0x800'83f0     0x8  AnyID_ESC_HL.o [1]
+  .rodata            const     0x800'83f8     0x8  AnyID_ESC_HL.o [1]
+  .rodata            const     0x800'8400     0x8  coeappl.o [1]
+  .rodata            const     0x800'8408     0x8  coeappl.o [1]
+  .rodata            const     0x800'8410     0x8  coeappl.o [1]
+  .rodata            const     0x800'8418     0x8  coeappl.o [1]
+  .rodata            const     0x800'8420     0x8  coeappl.o [1]
+  .rodata            const     0x800'8428     0x8  coeappl.o [1]
+  .text              ro code   0x800'8430     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'8434     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'8438     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'843c     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'8440     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'8444     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'8448     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'844c     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'8450     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'8454     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'8458     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'845c     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'8460     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'8464     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'8468     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'846c     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'8470     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'8474     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'8478     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'847c     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'8480     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'8484     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'8488     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'848c     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'8490     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'8494     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'8498     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'849c     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'84a0     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'84a4     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'84a8     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'84ac     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'84b0     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'84b4     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'84b8     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'84bc     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'84c0     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'84c4     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'84c8     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'84cc     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'84d0     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'84d4     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'84d8     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'84dc     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'84e0     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'84e4     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'84e8     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'84ec     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'84f0     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'84f4     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'84f8     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'84fc     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'8500     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'8504     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'8508     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'850c     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'8510     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'8514     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'8518     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'851c     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'8520     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'8524     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'8528     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'852c     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'8530     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'8534     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'8538     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'853c     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'8540     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'8544     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'8548     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'854c     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'8550     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'8554     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'8558     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'855c     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'8560     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'8564     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'8568     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'856c     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'8570     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'8574     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'8578     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'857c     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'8580     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'8584     0x4  startup_stm32f427x.o [1]
+  .text              ro code   0x800'8588     0x4  startup_stm32f427x.o [1]
+  .rodata            const     0x800'858c     0x0  zero_init3.o [4]
+  .rodata            const     0x800'858c     0x0  lz77_init_single.o [4]
+  Initializer bytes  const     0x800'858c   0x212  <for P2-1>
+                             - 0x800'879e  0x85f2
+
+"P2", part 1 of 3:                          0x434
+  P2-1                        0x2000'0000   0x434  <Init block>
+    .data            inited   0x2000'0000     0x4  AnyID_SysCfg.o [1]
+    .data            inited   0x2000'0004     0x4  Application.o [1]
+    .data            inited   0x2000'0008   0x140  coeappl.o [1]
+    .data            inited   0x2000'0148     0x4  coeappl.o [1]
+    .data            inited   0x2000'014c    0x10  coeappl.o [1]
+    .data            inited   0x2000'015c     0x4  coeappl.o [1]
+    .data            inited   0x2000'0160     0x8  coeappl.o [1]
+    .data            inited   0x2000'0168    0x14  coeappl.o [1]
+    .data            inited   0x2000'017c     0x8  coeappl.o [1]
+    .data            inited   0x2000'0184   0x1e0  coeappl.o [1]
+    .data            inited   0x2000'0364     0xc  objdef.o [1]
+    .data            inited   0x2000'0370    0x10  objdef.o [1]
+    .data            inited   0x2000'0380    0x44  SSC-Device.o [1]
+    .data            inited   0x2000'03c4    0x44  SSC-Device.o [1]
+    .data            inited   0x2000'0408     0x4  SSC-Device.o [1]
+    .data            inited   0x2000'040c     0x4  SSC-Device.o [1]
+    .data            inited   0x2000'0410     0x4  SSC-Device.o [1]
+    .data            inited   0x2000'0414     0x4  SSC-Device.o [1]
+    .data            inited   0x2000'0418     0xc  SSC-Device.o [1]
+    .data            inited   0x2000'0424    0x10  stm32f4xx_rcc.o [1]
+                            - 0x2000'0434   0x434
+
+"P2", part 2 of 3:                          0x5a4
+  .bss               zero     0x2000'0434   0x1d8  dlmalloc.o [2]
+  .bss               zero     0x2000'060c   0x180  bootloaderappl.o [1]
+  .bss               zero     0x2000'078c    0x44  objdef.o [1]
+  .bss               zero     0x2000'07d0    0x44  objdef.o [1]
+  .bss               zero     0x2000'0814    0x34  mailbox.o [1]
+  .bss               zero     0x2000'0848    0x34  mailbox.o [1]
+  .bss               zero     0x2000'087c    0x30  AnyID_IO.o [1]
+  .bss               zero     0x2000'08ac    0x18  dlmalloc.o [2]
+  .bss               zero     0x2000'08c4    0x10  bootloaderappl.o [1]
+  .bss               zero     0x2000'08d4    0x10  sdoserv.o [1]
+  .bss               zero     0x2000'08e8     0x8  coeappl.o [1]
+  .bss               zero     0x2000'08f0     0x8  ecatslv.o [1]
+  .bss               zero     0x2000'08f8     0x4  AnyID_SysTick_HL.o [1]
+  .bss               zero     0x2000'08fc     0x4  AnyID_SysTick_HL.o [1]
+  .bss               zero     0x2000'0900     0x4  Application.o [1]
+  .bss               zero     0x2000'0904     0x4  bootloaderappl.o [1]
+  .bss               zero     0x2000'0908     0x4  bootloaderappl.o [1]
+  .bss               zero     0x2000'090c     0x4  coeappl.o [1]
+  .bss               zero     0x2000'0910     0x4  coeappl.o [1]
+  .bss               zero     0x2000'0914     0x4  coeappl.o [1]
+  .bss               zero     0x2000'0918     0x4  ecatappl.o [1]
+  .bss               zero     0x2000'091c     0x4  ecatappl.o [1]
+  .bss               zero     0x2000'0920     0x4  ecatappl.o [1]
+  .bss               zero     0x2000'0924     0x4  ecatappl.o [1]
+  .bss               zero     0x2000'0928     0x4  ecatappl.o [1]
+  .bss               zero     0x2000'092c     0x4  ecatappl.o [1]
+  .bss               zero     0x2000'0930     0x4  ecatappl.o [1]
+  .bss               zero     0x2000'0934     0x4  ecatappl.o [1]
+  .bss               zero     0x2000'0938     0x4  ecatappl.o [1]
+  .bss               zero     0x2000'093c     0x4  ecatappl.o [1]
+  .bss               zero     0x2000'0940     0x4  ecatcoe.o [1]
+  .bss               zero     0x2000'0944     0x4  ecatfoe.o [1]
+  .bss               zero     0x2000'0948     0x4  ecatfoe.o [1]
+  .bss               zero     0x2000'094c     0x4  ecatfoe.o [1]
+  .bss               zero     0x2000'0950     0x4  ecatfoe.o [1]
+  .bss               zero     0x2000'0954     0x4  ecatslv.o [1]
+  .bss               zero     0x2000'0958     0x4  ecatslv.o [1]
+  .bss               zero     0x2000'095c     0x4  mailbox.o [1]
+  .bss               zero     0x2000'0960     0x4  mailbox.o [1]
+  .bss               zero     0x2000'0964     0x4  mailbox.o [1]
+  .bss               zero     0x2000'0968     0x4  mailbox.o [1]
+  .bss               zero     0x2000'096c     0x4  sdoserv.o [1]
+  .bss               zero     0x2000'0970     0x4  xgetmemchunk.o [2]
+  .bss               zero     0x2000'0974     0x2  AnyID_ESC.o [1]
+  .bss               zero     0x2000'0976     0x2  AnyID_IO_HL.o [1]
+  .bss               zero     0x2000'0978     0x2  coeappl.o [1]
+  .bss               zero     0x2000'097a     0x2  ecatappl.o [1]
+  .bss               zero     0x2000'097c     0x2  ecatappl.o [1]
+  .bss               zero     0x2000'097e     0x2  ecatfoe.o [1]
+  .bss               zero     0x2000'0980     0x2  ecatfoe.o [1]
+  .bss               zero     0x2000'0982     0x2  ecatslv.o [1]
+  .bss               zero     0x2000'0984     0x2  ecatslv.o [1]
+  .bss               zero     0x2000'0986     0x2  ecatslv.o [1]
+  .bss               zero     0x2000'0988     0x2  ecatslv.o [1]
+  .bss               zero     0x2000'098a     0x2  ecatslv.o [1]
+  .bss               zero     0x2000'098c     0x2  ecatslv.o [1]
+  .bss               zero     0x2000'098e     0x2  ecatslv.o [1]
+  .bss               zero     0x2000'0990     0x2  ecatslv.o [1]
+  .bss               zero     0x2000'0992     0x2  ecatslv.o [1]
+  .bss               zero     0x2000'0994     0x2  ecatslv.o [1]
+  .bss               zero     0x2000'0996     0x2  ecatslv.o [1]
+  .bss               zero     0x2000'0998     0x2  ecatslv.o [1]
+  .bss               zero     0x2000'099a     0x2  ecatslv.o [1]
+  .bss               zero     0x2000'099c     0x2  ecatslv.o [1]
+  .bss               zero     0x2000'099e     0x2  ecatslv.o [1]
+  .bss               zero     0x2000'09a0     0x2  ecatslv.o [1]
+  .bss               zero     0x2000'09a2     0x2  ecatslv.o [1]
+  .bss               zero     0x2000'09a4     0x2  ecatslv.o [1]
+  .bss               zero     0x2000'09a6     0x2  ecatslv.o [1]
+  .bss               zero     0x2000'09a8     0x2  ecatslv.o [1]
+  .bss               zero     0x2000'09aa     0x2  ecatslv.o [1]
+  .bss               zero     0x2000'09ac     0x2  mailbox.o [1]
+  .bss               zero     0x2000'09ae     0x2  mailbox.o [1]
+  .bss               zero     0x2000'09b0     0x2  mailbox.o [1]
+  .bss               zero     0x2000'09b2     0x2  mailbox.o [1]
+  .bss               zero     0x2000'09b4     0x2  objdef.o [1]
+  .bss               zero     0x2000'09b6     0x2  sdoserv.o [1]
+  .bss               zero     0x2000'09b8     0x1  ecatappl.o [1]
+  .bss               zero     0x2000'09b9     0x1  ecatappl.o [1]
+  .bss               zero     0x2000'09ba     0x1  ecatappl.o [1]
+  .bss               zero     0x2000'09bb     0x1  ecatslv.o [1]
+  .bss               zero     0x2000'09bc     0x1  ecatslv.o [1]
+  .bss               zero     0x2000'09bd     0x1  ecatslv.o [1]
+  .bss               zero     0x2000'09be     0x1  ecatslv.o [1]
+  .bss               zero     0x2000'09bf     0x1  ecatslv.o [1]
+  .bss               zero     0x2000'09c0     0x1  ecatslv.o [1]
+  .bss               zero     0x2000'09c1     0x1  ecatslv.o [1]
+  .bss               zero     0x2000'09c2     0x1  ecatslv.o [1]
+  .bss               zero     0x2000'09c3     0x1  ecatslv.o [1]
+  .bss               zero     0x2000'09c4     0x1  ecatslv.o [1]
+  .bss               zero     0x2000'09c5     0x1  ecatslv.o [1]
+  .bss               zero     0x2000'09c6     0x1  ecatslv.o [1]
+  .bss               zero     0x2000'09c7     0x1  ecatslv.o [1]
+  .bss               zero     0x2000'09c8     0x1  ecatslv.o [1]
+  .bss               zero     0x2000'09c9     0x1  ecatslv.o [1]
+  .bss               zero     0x2000'09ca     0x1  ecatslv.o [1]
+  .bss               zero     0x2000'09cb     0x1  ecatslv.o [1]
+  .bss               zero     0x2000'09cc     0x1  ecatslv.o [1]
+  .bss               zero     0x2000'09cd     0x1  ecatslv.o [1]
+  .bss               zero     0x2000'09ce     0x1  mailbox.o [1]
+  .bss               zero     0x2000'09cf     0x1  mailbox.o [1]
+  .bss               zero     0x2000'09d0     0x1  mailbox.o [1]
+  .bss               zero     0x2000'09d1     0x1  mailbox.o [1]
+  .bss               zero     0x2000'09d2     0x1  mailbox.o [1]
+  .bss               zero     0x2000'09d3     0x1  mailbox.o [1]
+  .bss               zero     0x2000'09d4     0x1  mailbox.o [1]
+  .bss               zero     0x2000'09d5     0x1  mailbox.o [1]
+  .bss               zero     0x2000'09d6     0x1  objdef.o [1]
+                            - 0x2000'09d7   0x5a3
+
+"P2", part 3 of 3:                         0x6000
+  CSTACK                      0x2000'09d8  0x4000  <Block>
+    CSTACK           uninit   0x2000'09d8  0x4000  <Block tail>
+  HEAP                        0x2000'49d8  0x2000  <Block>
+    HEAP             uninit   0x2000'49d8  0x2000  <Block tail>
+                            - 0x2000'69d8  0x6000
+
+Unused ranges:
+
+         From           To      Size
+         ----           --      ----
+   0x800'879e   0x80f'ffff  0xf'7862
+  0x2000'69d8  0x2001'ffff  0x1'9628
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x5a3:
+          0x2000'0434  0x5a3
+
+Copy/lz77 (__iar_lz77_init_single3)
+    1 source range, total size 0x212 (49% of destination):
+           0x800'858c  0x212
+    1 destination range, total size 0x434:
+          0x2000'0000  0x434
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                ro code  ro data  rw data
+    ------                -------  -------  -------
+command line/config:
+    -----------------------------------------------
+    Total:
+
+E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj: [1]
+    AnyID_ESC.o               788                 2
+    AnyID_ESC_HL.o            660       40
+    AnyID_IO.o                188                48
+    AnyID_IO_HL.o             158      256        2
+    AnyID_SysCfg.o            432        1        4
+    AnyID_SysTick_HL.o        164                 8
+    Application.o           1'028        2        8
+    SSC-Device.o              396       81      164
+    bootloaderappl.o          552               408
+    bootmode.o                 30
+    coeappl.o                 822    2'756      882
+    ecatappl.o              1'640                47
+    ecatcoe.o                 144                 4
+    ecatfoe.o                 860                20
+    ecatslv.o               6'620                77
+    foeappl.o                 276
+    mailbox.o               1'976               136
+    main.o                     16
+    misc.o                    156
+    objdef.o                4'348       46      167
+    sdoserv.o               1'612      120       22
+    startup_stm32f427x.o      792
+    stm32f4xx_exti.o          172
+    stm32f4xx_gpio.o          308
+    stm32f4xx_it.o             56
+    stm32f4xx_rcc.o           408        8       16
+    stm32f4xx_spi.o           120
+    stm32f4xx_syscfg.o         88
+    stm32f4xx_tim.o           172
+    system_stm32f4xx.o        292
+    -----------------------------------------------
+    Total:                 25'274    3'310    2'015
+
+dl7M_tlf.a: [2]
+    abort.o                     6
+    dlmalloc.o              5'276               496
+    exit.o                      4
+    heaptramp0.o                4
+    low_level_init.o            4
+    xgetmemchunk.o             44                 4
+    -----------------------------------------------
+    Total:                  5'338               500
+
+m7M_tls.a: [3]
+    fpinit_M.o                 34
+    -----------------------------------------------
+    Total:                     34
+
+rt7M_tl.a: [4]
+    ABImemcpy.o               166
+    ABImemset.o               102
+    cexit.o                    10
+    cmain.o                    30
+    cstartup_M.o               12
+    data_init.o                40
+    lz77_init_single.o        120
+    memcmp.o                  104
+    strlen.o                   54
+    zero_init3.o               58
+    -----------------------------------------------
+    Total:                    696
+
+shb_l.a: [5]
+    exit.o                     20
+    -----------------------------------------------
+    Total:                     20
+
+    Gaps                       10        4        4
+    Linker created                      32   24'576
+---------------------------------------------------
+    Grand Total:           31'372    3'346   27'095
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address   Size  Type      Object
+-----                       -------   ----  ----      ------
+.iar.init_table$$Base    0x800'8210          --   Gb  - Linker created -
+.iar.init_table$$Limit   0x800'8230          --   Gb  - Linker created -
+?main                    0x800'8291         Code  Gb  cmain.o [4]
+AL_ControlInd            0x800'0f0d  0x56c  Code  Gb  ecatslv.o [1]
+AL_ControlRes            0x800'14c1  0x276  Code  Gb  ecatslv.o [1]
+APBAHBPrescTable        0x2000'0424   0x10  Data  Lc  stm32f4xx_rcc.o [1]
+APPL_AckErrorInd         0x800'2505    0x2  Code  Gb  SSC-Device.o [1]
+APPL_Application         0x800'2675   0x10  Code  Gb  SSC-Device.o [1]
+APPL_CoeRxPdoMapping     0x800'361b    0x8  Code  Gb  Application.o [1]
+APPL_CoeTxPdoMapping     0x800'360f    0xc  Code  Gb  Application.o [1]
+APPL_GenerateMapping     0x800'2527  0x136  Code  Gb  SSC-Device.o [1]
+APPL_InputMapping        0x800'265d    0xc  Code  Gb  SSC-Device.o [1]
+APPL_OutputMapping       0x800'2669    0xc  Code  Gb  SSC-Device.o [1]
+APPL_StartInputHandler   0x800'250f    0x6  Code  Gb  SSC-Device.o [1]
+APPL_StartMailboxHandler
+                         0x800'2507    0x4  Code  Gb  SSC-Device.o [1]
+APPL_StartOutputHandler
+                         0x800'2519    0x4  Code  Gb  SSC-Device.o [1]
+APPL_StopInputHandler    0x800'2515    0x4  Code  Gb  SSC-Device.o [1]
+APPL_StopMailboxHandler
+                         0x800'250b    0x4  Code  Gb  SSC-Device.o [1]
+APPL_StopOutputHandler   0x800'251d    0xa  Code  Gb  SSC-Device.o [1]
+AddObjectsToObjDictionary
+                         0x800'3c93   0x32  Code  Gb  coeappl.o [1]
+AddressingEsc            0x800'1cf3   0x34  Code  Lc  AnyID_ESC.o [1]
+ApplicationObjDic       0x2000'0008  0x140  Data  Gb  coeappl.o [1]
+BL_Data                  0x800'2e61    0x6  Code  Gb  bootmode.o [1]
+BL_Start                 0x800'2e49    0x2  Code  Gb  bootmode.o [1]
+BL_Stop                  0x800'2e4b    0xc  Code  Gb  bootmode.o [1]
+BackToInitTransition     0x800'0d85    0x8  Code  Gb  ecatslv.o [1]
+BusFault_Handler         0x800'8193    0x2  Code  Gb  stm32f4xx_it.o [1]
+COE_AddObjectToDic       0x800'3ba9   0x86  Code  Gb  coeappl.o [1]
+COE_ClearObjDictionary   0x800'3c71   0x22  Code  Gb  coeappl.o [1]
+COE_ContinueInd          0x800'2ee5   0x44  Code  Gb  ecatcoe.o [1]
+COE_GetObjectDictionary
+                         0x800'3aaf    0x6  Code  Gb  coeappl.o [1]
+COE_Init                 0x800'2ea1    0x8  Code  Gb  ecatcoe.o [1]
+COE_Main                 0x800'3d21    0x2  Code  Gb  coeappl.o [1]
+COE_ObjDictionaryInit    0x800'3cc5   0x2a  Code  Gb  coeappl.o [1]
+COE_ObjInit              0x800'3af7   0xb2  Code  Gb  coeappl.o [1]
+COE_RemoveDicEntry       0x800'3c2f   0x42  Code  Gb  coeappl.o [1]
+COE_ServiceInd           0x800'2ea9   0x3c  Code  Gb  ecatcoe.o [1]
+COE_SyncTimeStamp        0x800'3a47   0x68  Code  Gb  coeappl.o [1]
+COE_UpdateSyncErrorStatus
+                         0x800'3ab5   0x42  Code  Gb  coeappl.o [1]
+CSTACK$$Base            0x2000'09d8          --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'49d8          --   Gb  - Linker created -
+CheckIfEcatError         0x800'187d   0x3e  Code  Gb  ecatslv.o [1]
+CheckSmSettings          0x800'02cb  0x334  Code  Gb  ecatslv.o [1]
+CheckSyncTypeValue       0x800'419b  0x124  Code  Gb  objdef.o [1]
+DC_CheckWatchdog         0x800'178d   0xf0  Code  Gb  ecatslv.o [1]
+DISABLE_ESC_INT          0x800'1bcf   0x16  Code  Gb  AnyID_ESC.o [1]
+DIUnit10x1A00           0x2000'03c4   0x44  Data  Gb  SSC-Device.o [1]
+DIUnit10x6000           0x2000'0410    0x4  Data  Gb  SSC-Device.o [1]
+DOUnit20x1600           0x2000'0380   0x44  Data  Gb  SSC-Device.o [1]
+DOUnit20x7000           0x2000'0414    0x4  Data  Gb  SSC-Device.o [1]
+DebugMon_Handler         0x800'8199    0x2  Code  Gb  stm32f4xx_it.o [1]
+DisableSyncManChannel    0x800'0265   0x34  Code  Gb  ecatslv.o [1]
+ECAT_Application         0x800'2433   0x2c  Code  Gb  ecatappl.o [1]
+ECAT_CheckTimer          0x800'1f95   0x84  Code  Gb  ecatappl.o [1]
+ECAT_CheckWatchdog       0x800'173d   0x46  Code  Gb  ecatslv.o [1]
+ECAT_Init                0x800'18ed   0xe4  Code  Gb  ecatslv.o [1]
+ECAT_Main                0x800'19dd  0x128  Code  Gb  ecatslv.o [1]
+ENABLE_ESC_INT           0x800'1bb9   0x16  Code  Gb  AnyID_ESC.o [1]
+ESC_CS                   0x800'83d8    0x8  Data  Gb  AnyID_ESC_HL.o [1]
+ESC_INT                  0x800'83f8    0x8  Data  Gb  AnyID_ESC_HL.o [1]
+ESC_INT_Init             0x800'1be5    0x8  Code  Gb  AnyID_ESC.o [1]
+ESC_SPI_PORT             0x800'83e0    0x8  Data  Gb  AnyID_ESC_HL.o [1]
+ESC_SYNC0                0x800'83e8    0x8  Data  Gb  AnyID_ESC_HL.o [1]
+ESC_SYNC1                0x800'83f0    0x8  Data  Gb  AnyID_ESC_HL.o [1]
+EXTI0_IRQHandler         0x800'1c25   0x18  Code  Gb  AnyID_ESC.o [1]
+EXTI2_IRQHandler         0x800'1bed   0x28  Code  Gb  AnyID_ESC.o [1]
+EXTI_ClearITPendingBit   0x800'3255    0x6  Code  Gb  stm32f4xx_exti.o [1]
+EXTI_GetITStatus         0x800'323f   0x16  Code  Gb  stm32f4xx_exti.o [1]
+EXTI_Init                0x800'31c5   0x7a  Code  Gb  stm32f4xx_exti.o [1]
+EcatWdCounter           0x2000'09a4    0x2  Data  Gb  ecatslv.o [1]
+EcatWdValue             0x2000'09a2    0x2  Data  Gb  ecatslv.o [1]
+EepromLoaded            0x2000'09cd    0x1  Data  Gb  ecatslv.o [1]
+EnableSyncManChannel     0x800'0299   0x32  Code  Gb  ecatslv.o [1]
+EscALEvent              0x2000'0974    0x2  Data  Gb  AnyID_ESC.o [1]
+Esc_InitInterface        0x800'2f31   0xcc  Code  Gb  AnyID_ESC_HL.o [1]
+Esc_IntInit              0x800'3043   0x74  Code  Gb  AnyID_ESC_HL.o [1]
+Esc_Sync0Init            0x800'30b7   0x7a  Code  Gb  AnyID_ESC_HL.o [1]
+Esc_Sync1Init            0x800'3131   0x7a  Code  Gb  AnyID_ESC_HL.o [1]
+Esc_WriteByte            0x800'2ffd   0x46  Code  Gb  AnyID_ESC_HL.o [1]
+EsmTimeoutCounter       0x2000'0982    0x2  Data  Gb  ecatslv.o [1]
+FMSC_DI_PORT             0x800'7cd8   0x80  Data  Gb  AnyID_IO_HL.o [1]
+FMSC_DO_PORT             0x800'7c58   0x80  Data  Gb  AnyID_IO_HL.o [1]
+FOE_Ack                  0x800'7349   0x22  Code  Gb  foeappl.o [1]
+FOE_Busy                 0x800'736b   0x12  Code  Gb  foeappl.o [1]
+FOE_ContinueInd          0x800'65e1   0x1a  Code  Gb  ecatfoe.o [1]
+FOE_Data                 0x800'72ef   0x5a  Code  Gb  foeappl.o [1]
+FOE_Error                0x800'737d   0x14  Code  Gb  foeappl.o [1]
+FOE_Init                 0x800'62c1   0x20  Code  Gb  ecatfoe.o [1]
+FOE_Read                 0x800'7299   0x32  Code  Gb  foeappl.o [1]
+FOE_ServiceInd           0x800'62e1  0x300  Code  Gb  ecatfoe.o [1]
+FOE_Write                0x800'72cb   0x24  Code  Gb  foeappl.o [1]
+FirmEndFlashAddr        0x2000'0004    0x4  Data  Gb  Application.o [1]
+FoE_APPL_Init            0x800'7241   0x20  Code  Gb  bootloaderappl.o [1]
+FoE_Read                 0x800'7071   0xb0  Code  Gb  bootloaderappl.o [1]
+FoE_ReadData             0x800'7121   0x4a  Code  Gb  bootloaderappl.o [1]
+FoE_Write                0x800'71e9   0x58  Code  Gb  bootloaderappl.o [1]
+FoE_WriteData            0x800'716b   0x7e  Code  Gb  bootloaderappl.o [1]
+GPIO_Init                0x800'38b9   0xca  Code  Gb  stm32f4xx_gpio.o [1]
+GPIO_PinAFConfig         0x800'398b   0x62  Code  Gb  stm32f4xx_gpio.o [1]
+GPIO_ResetBits           0x800'3987    0x4  Code  Gb  stm32f4xx_gpio.o [1]
+GPIO_SetBits             0x800'3983    0x4  Code  Gb  stm32f4xx_gpio.o [1]
+GenObjDic               0x2000'0184  0x1e0  Data  Gb  coeappl.o [1]
+GetInterruptRegister     0x800'1d27    0xe  Code  Lc  AnyID_ESC.o [1]
+GetOutOfMbxQueue         0x800'26c5   0x30  Code  Gb  mailbox.o [1]
+GetSyncMan               0x800'0243   0x22  Code  Gb  ecatslv.o [1]
+GetSystemTimeDelay       0x800'206d   0x4e  Code  Gb  ecatappl.o [1]
+HEAP$$Base              0x2000'49d8          --   Gb  - Linker created -
+HEAP$$Limit             0x2000'69d8          --   Gb  - Linker created -
+HW_EscRead               0x800'1d5d   0x4a  Code  Gb  AnyID_ESC.o [1]
+HW_EscReadIsr            0x800'1da7   0x52  Code  Gb  AnyID_ESC.o [1]
+HW_EscWrite              0x800'1df9   0x4c  Code  Gb  AnyID_ESC.o [1]
+HW_EscWriteIsr           0x800'1e45   0x42  Code  Gb  AnyID_ESC.o [1]
+HW_GetALEventRegister    0x800'1d45    0xc  Code  Gb  AnyID_ESC.o [1]
+HW_GetALEventRegister_Isr
+                         0x800'1d51    0xc  Code  Gb  AnyID_ESC.o [1]
+HW_Init                  0x800'1c9f   0x54  Code  Gb  AnyID_ESC.o [1]
+HW_Release               0x800'1d43    0x2  Code  Gb  AnyID_ESC.o [1]
+HandleCycleTimeMeasurement
+                         0x800'2019   0x54  Code  Gb  ecatappl.o [1]
+HardFault_Handler        0x800'818f    0x2  Code  Gb  stm32f4xx_it.o [1]
+IO_ChkDiTask             0x800'6fbf   0x3c  Code  Gb  AnyID_IO.o [1]
+IO_Delayms               0x800'7439   0x12  Code  Gb  AnyID_IO_HL.o [1]
+IO_Init                  0x800'73ad   0x84  Code  Gb  AnyID_IO_HL.o [1]
+IO_Test                  0x800'6f4d   0x72  Code  Gb  AnyID_IO.o [1]
+ISR_GetInterruptRegister
+                         0x800'1d35    0xe  Code  Lc  AnyID_ESC.o [1]
+LatchInputSync0Counter  0x2000'0996    0x2  Data  Gb  ecatslv.o [1]
+LatchInputSync0Value    0x2000'0994    0x2  Data  Gb  ecatslv.o [1]
+MBX_CheckAndCopyMailbox
+                         0x800'2bcd   0xfa  Code  Gb  mailbox.o [1]
+MBX_CopyToSendMailbox    0x800'2cc7   0xd4  Code  Gb  mailbox.o [1]
+MBX_Init                 0x800'26f5   0xc4  Code  Gb  mailbox.o [1]
+MBX_MailboxReadInd       0x800'2a57   0xa8  Code  Gb  mailbox.o [1]
+MBX_MailboxRepeatReq     0x800'2aff   0x50  Code  Gb  mailbox.o [1]
+MBX_MailboxSendReq       0x800'2b4f   0x7e  Code  Gb  mailbox.o [1]
+MBX_MailboxWriteInd      0x800'29c3   0x94  Code  Gb  mailbox.o [1]
+MBX_Main                 0x800'2d9b   0x54  Code  Gb  mailbox.o [1]
+MBX_StartMailboxHandler
+                         0x800'27b9   0xca  Code  Gb  mailbox.o [1]
+MBX_StopMailboxHandler   0x800'2883   0xfc  Code  Gb  mailbox.o [1]
+MY_Application           0x800'3271  0x33c  Code  Gb  Application.o [1]
+MailboxServiceInd        0x800'297f   0x44  Code  Gb  mailbox.o [1]
+MainInit                 0x800'22c7   0xb4  Code  Gb  ecatappl.o [1]
+MainLoop                 0x800'237b   0xb8  Code  Gb  ecatappl.o [1]
+MemManage_Handler        0x800'8191    0x2  Code  Gb  stm32f4xx_it.o [1]
+NMI_Handler              0x800'818d    0x2  Code  Gb  stm32f4xx_it.o [1]
+NVIC_DisableIRQ          0x800'1ba1   0x18  Code  Lc  AnyID_ESC.o [1]
+NVIC_EnableIRQ           0x800'1b89   0x18  Code  Lc  AnyID_ESC.o [1]
+NVIC_Init                0x800'6e49   0x68  Code  Gb  misc.o [1]
+NVIC_SetPriority         0x800'7611   0x2c  Code  Lc  AnyID_SysTick_HL.o [1]
+OBJ_CopyNumberToString   0x800'3dad   0x4c  Code  Gb  objdef.o [1]
+OBJ_GetDesc              0x800'3f37  0x11a  Code  Gb  objdef.o [1]
+OBJ_GetEntryDesc         0x800'4051   0x38  Code  Gb  objdef.o [1]
+OBJ_GetEntryOffset       0x800'408d  0x10e  Code  Gb  objdef.o [1]
+OBJ_GetNoOfObjects       0x800'3df9   0x76  Code  Gb  objdef.o [1]
+OBJ_GetObjDesc           0x800'4089    0x4  Code  Gb  objdef.o [1]
+OBJ_GetObjectHandle      0x800'3d25   0x24  Code  Gb  objdef.o [1]
+OBJ_GetObjectLength      0x800'3d49   0x64  Code  Gb  objdef.o [1]
+OBJ_GetObjectList        0x800'3e6f   0xc8  Code  Gb  objdef.o [1]
+OBJ_Read                 0x800'42bf  0x552  Code  Gb  objdef.o [1]
+OBJ_Write                0x800'481d  0x5e8  Code  Gb  objdef.o [1]
+ObjDicList              0x2000'0914    0x4  Data  Gb  coeappl.o [1]
+PDI_ClearTimer           0x800'1c5d    0xc  Code  Gb  AnyID_ESC.o [1]
+PDI_GetTimer             0x800'1c51    0xc  Code  Gb  AnyID_ESC.o [1]
+PDI_IRQ_Interrupt        0x800'1c49    0x8  Code  Gb  AnyID_ESC.o [1]
+PDI_Init_SYNC_Interrupts
+                         0x800'1c3d    0xc  Code  Gb  AnyID_ESC.o [1]
+PDI_Isr                  0x800'20bb  0x124  Code  Gb  ecatappl.o [1]
+PDI_Timer_Interrupt      0x800'1c69   0x36  Code  Gb  AnyID_ESC.o [1]
+PDO_InputMapping         0x800'1e9d   0x74  Code  Gb  ecatappl.o [1]
+PDO_OutputMapping        0x800'1f11   0x84  Code  Gb  ecatappl.o [1]
+ParametersHanding0xF008
+                        0x2000'0418    0xc  Data  Gb  SSC-Device.o [1]
+PendSV_Handler           0x800'819b    0x2  Code  Gb  stm32f4xx_it.o [1]
+PutInMbxQueue            0x800'2691   0x34  Code  Gb  mailbox.o [1]
+RCC_AHB1PeriphClockCmd   0x800'3823   0x1c  Code  Gb  stm32f4xx_rcc.o [1]
+RCC_AHB2PeriphClockCmd   0x800'383f   0x1c  Code  Gb  stm32f4xx_rcc.o [1]
+RCC_APB1PeriphClockCmd   0x800'385b   0x1c  Code  Gb  stm32f4xx_rcc.o [1]
+RCC_APB2PeriphClockCmd   0x800'3877   0x1c  Code  Gb  stm32f4xx_rcc.o [1]
+RCC_GetClocksFreq        0x800'3721  0x102  Code  Gb  stm32f4xx_rcc.o [1]
+Read0x10F8               0x800'39ed   0x5a  Code  Gb  coeappl.o [1]
+Region$$Table$$Base      0x800'8210          --   Gb  - Linker created -
+Region$$Table$$Limit     0x800'8230          --   Gb  - Linker created -
+ResetALEventMask         0x800'01ad   0x34  Code  Gb  ecatslv.o [1]
+SDOS_SdoInd              0x800'6863  0x204  Code  Gb  sdoserv.o [1]
+SDOS_SdoInfoInd          0x800'6a67  0x2f6  Code  Gb  sdoserv.o [1]
+SMActivate              0x2000'0958    0x4  Data  Gb  ecatslv.o [1]
+SPI_Cmd                  0x800'6db7   0x1e  Code  Gb  stm32f4xx_spi.o [1]
+SPI_I2S_GetFlagStatus    0x800'6ddd   0x14  Code  Gb  stm32f4xx_spi.o [1]
+SPI_I2S_ReceiveData      0x800'6dd5    0x4  Code  Gb  stm32f4xx_spi.o [1]
+SPI_I2S_SendData         0x800'6dd9    0x4  Code  Gb  stm32f4xx_spi.o [1]
+SPI_Init                 0x800'6d79   0x3e  Code  Gb  stm32f4xx_spi.o [1]
+STick_InitSysTick        0x800'766d   0x26  Code  Gb  AnyID_SysTick_HL.o [1]
+SVC_Handler              0x800'8197    0x2  Code  Gb  stm32f4xx_it.o [1]
+SYNC0_INT_Init           0x800'1c15    0x8  Code  Gb  AnyID_ESC.o [1]
+SYNC1_INT_Init           0x800'1c1d    0x8  Code  Gb  AnyID_ESC.o [1]
+SYSCFG_EXTILineConfig    0x800'6df1   0x52  Code  Gb  stm32f4xx_syscfg.o [1]
+SdoRes                   0x800'672d  0x136  Code  Gb  sdoserv.o [1]
+SetALEventMask           0x800'01e1   0x34  Code  Gb  ecatslv.o [1]
+SetALStatus              0x800'0d9d  0x128  Code  Gb  ecatslv.o [1]
+SetSysClock              0x800'76fb   0xaa  Code  Lc  system_stm32f4xx.o [1]
+StartInputHandler        0x800'05ff  0x64e  Code  Gb  ecatslv.o [1]
+StartOutputHandler       0x800'0c4d   0x4c  Code  Gb  ecatslv.o [1]
+StopInputHandler         0x800'0cad   0xd8  Code  Gb  ecatslv.o [1]
+StopOutput               0x800'35ad   0x62  Code  Gb  Application.o [1]
+StopOutputHandler        0x800'0c99   0x10  Code  Gb  ecatslv.o [1]
+Sync0WdCounter          0x2000'098c    0x2  Data  Gb  ecatslv.o [1]
+Sync0WdValue            0x2000'098e    0x2  Data  Gb  ecatslv.o [1]
+Sync0_Isr                0x800'21df   0xe8  Code  Gb  ecatappl.o [1]
+Sync1WdCounter          0x2000'0990    0x2  Data  Gb  ecatslv.o [1]
+Sync1WdValue            0x2000'0992    0x2  Data  Gb  ecatslv.o [1]
+SyncManInfo             0x2000'08f0    0x8  Data  Gb  ecatslv.o [1]
+SysTick_CLKSourceConfig
+                         0x800'6eb1   0x1c  Code  Gb  misc.o [1]
+SysTick_Config           0x800'763d   0x30  Code  Lc  AnyID_SysTick_HL.o [1]
+SysTick_Handler          0x800'819d   0x20  Code  Gb  stm32f4xx_it.o [1]
+Sys_CfgClock             0x800'7473   0xcc  Code  Gb  AnyID_SysCfg.o [1]
+Sys_CfgNVIC              0x800'755f    0xa  Code  Gb  AnyID_SysCfg.o [1]
+Sys_CfgPeriphClk         0x800'753f   0x20  Code  Gb  AnyID_SysCfg.o [1]
+Sys_Delayms              0x800'7461   0x12  Code  Gb  AnyID_SysCfg.o [1]
+Sys_EspAppTask           0x800'75bd   0x1a  Code  Gb  AnyID_SysCfg.o [1]
+Sys_Init                 0x800'7569   0x52  Code  Gb  AnyID_SysCfg.o [1]
+Sys_LedTask              0x800'75bb    0x2  Code  Gb  AnyID_SysCfg.o [1]
+SystemInit               0x800'76b5   0x46  Code  Gb  system_stm32f4xx.o [1]
+TIM_Cmd                  0x800'36e7   0x1e  Code  Gb  stm32f4xx_tim.o [1]
+TIM_GetCounter           0x800'36e3    0x4  Code  Gb  stm32f4xx_tim.o [1]
+TIM_SetCounter           0x800'36df    0x4  Code  Gb  stm32f4xx_tim.o [1]
+TIM_TimeBaseInit         0x800'3675   0x6a  Code  Gb  stm32f4xx_tim.o [1]
+TestCalcTimeFun          0x800'3623    0x2  Code  Gb  Application.o [1]
+UpdateEEPROMLoadedState
+                         0x800'0215   0x2e  Code  Gb  ecatslv.o [1]
+UsageFault_Handler       0x800'8195    0x2  Code  Gb  stm32f4xx_it.o [1]
+__aeabi_memcpy           0x800'6685         Code  Gb  ABImemcpy.o [4]
+__aeabi_memcpy4          0x800'66a5         Code  Gb  ABImemcpy.o [4]
+__aeabi_memcpy8          0x800'66a5         Code  Gb  ABImemcpy.o [4]
+__aeabi_memset           0x800'661d         Code  Gb  ABImemset.o [4]
+__cmain                  0x800'8291         Code  Gb  cmain.o [4]
+__data_GetMemChunk       0x800'7045   0x2c  Code  Gb  xgetmemchunk.o [2]
+__data_GetMemChunk::start
+                        0x2000'0970    0x4  Data  Lc  xgetmemchunk.o [2]
+__exit                   0x800'744d   0x14  Code  Gb  exit.o [5]
+__iar_Memset             0x800'661d         Code  Gb  ABImemset.o [4]
+__iar_Memset_word        0x800'6625         Code  Gb  ABImemset.o [4]
+__iar_data_init3         0x800'81c5   0x28  Code  Gb  data_init.o [4]
+__iar_dlfree             0x800'5d97  0x51e  Code  Gb  dlmalloc.o [2]
+__iar_dlmalloc           0x800'4ea9  0xeee  Code  Gb  dlmalloc.o [2]
+__iar_init_vfp           0x800'81ed         Code  Gb  fpinit_M.o [3]
+__iar_lz77_init_single3
+                         0x800'7dd1   0x78  Code  Gb  lz77_init_single.o [4]
+__iar_program_start      0x800'83cd         Code  Gb  cstartup_M.o [4]
+__iar_zero_init3         0x800'2e67   0x3a  Code  Gb  zero_init3.o [4]
+__low_level_init         0x800'82af    0x4  Code  Gb  low_level_init.o [2]
+__vector_table           0x800'0000         Data  Gb  startup_stm32f427x.o [1]
+_call_main               0x800'829d         Code  Gb  cmain.o [4]
+_exit                    0x800'82c9         Code  Gb  cexit.o [4]
+_gm_                    0x2000'0434  0x1d8  Data  Lc  dlmalloc.o [2]
+_main                    0x800'82ab         Code  Gb  cmain.o [4]
+aFileData               0x2000'060c  0x180  Data  Gb  bootloaderappl.o [1]
+aFileName               0x2000'08c4   0x10  Data  Gb  bootloaderappl.o [1]
+aName0x1000              0x800'83a8    0xc  Data  Gb  coeappl.o [1]
+aName0x1001              0x800'8370   0x10  Data  Gb  coeappl.o [1]
+aName0x1008              0x800'83b4    0xc  Data  Gb  coeappl.o [1]
+aName0x1009              0x800'830c   0x14  Data  Gb  coeappl.o [1]
+aName0x100A              0x800'8320   0x14  Data  Gb  coeappl.o [1]
+aName0x1018              0x800'8150   0x3c  Data  Gb  coeappl.o [1]
+aName0x10F1              0x800'8110   0x40  Data  Gb  coeappl.o [1]
+aName0x10F8              0x800'8348   0x14  Data  Gb  coeappl.o [1]
+aName0x1600              0x800'79d8   0xdc  Data  Gb  coeappl.o [1]
+aName0x1A00              0x800'7ab4   0xdc  Data  Gb  coeappl.o [1]
+aName0x1C00              0x800'835c   0x14  Data  Gb  coeappl.o [1]
+aName0x1C12              0x800'82d4   0x1c  Data  Gb  coeappl.o [1]
+aName0x1C13              0x800'82f0   0x1c  Data  Gb  coeappl.o [1]
+aName0x1C32              0x800'77d8  0x100  Data  Gb  coeappl.o [1]
+aName0x1C33              0x800'78d8  0x100  Data  Gb  coeappl.o [1]
+aName0x6000              0x800'7fe8   0x64  Data  Gb  coeappl.o [1]
+aName0x7000              0x800'804c   0x64  Data  Gb  coeappl.o [1]
+aName0xF008              0x800'80b0   0x60  Data  Gb  coeappl.o [1]
+aPdInputData            0x2000'097c    0x2  Data  Gb  ecatappl.o [1]
+aPdOutputData           0x2000'097a    0x2  Data  Gb  ecatappl.o [1]
+aSdoInfoHeader          0x2000'08d4   0x10  Data  Gb  sdoserv.o [1]
+aSubindexDesc           0x2000'0370   0x10  Data  Gb  objdef.o [1]
+abort                    0x800'703f    0x6  Code  Gb  abort.o [2]
+acDevicename            0x2000'014c   0x10  Data  Gb  coeappl.o [1]
+acHardwareversion       0x2000'015c    0x4  Data  Gb  coeappl.o [1]
+acSoftwareversion       0x2000'0160    0x8  Data  Gb  coeappl.o [1]
+asEntryDesc0x1018        0x800'8250   0x20  Data  Gb  coeappl.o [1]
+asEntryDesc0x10F1        0x800'8334   0x14  Data  Gb  coeappl.o [1]
+asEntryDesc0x1600        0x800'7e48   0x68  Data  Gb  coeappl.o [1]
+asEntryDesc0x1A00        0x800'7eb0   0x68  Data  Gb  coeappl.o [1]
+asEntryDesc0x1C00        0x800'83c0    0xc  Data  Gb  coeappl.o [1]
+asEntryDesc0x1C12        0x800'8390    0xc  Data  Gb  coeappl.o [1]
+asEntryDesc0x1C13        0x800'839c    0xc  Data  Gb  coeappl.o [1]
+asEntryDesc0x1C3x        0x800'7b90   0xc8  Data  Gb  coeappl.o [1]
+asEntryDesc0x6000        0x800'7f18   0x68  Data  Gb  coeappl.o [1]
+asEntryDesc0x7000        0x800'7f80   0x68  Data  Gb  coeappl.o [1]
+asEntryDesc0xF008        0x800'8230   0x20  Data  Gb  coeappl.o [1]
+b32BitDc                0x2000'09c3    0x1  Data  Gb  ecatslv.o [1]
+b3BufferMode            0x2000'09c5    0x1  Data  Gb  ecatslv.o [1]
+bApplEsmPending         0x2000'09c7    0x1  Data  Gb  ecatslv.o [1]
+bBootMode               0x2000'09bb    0x1  Data  Gb  ecatslv.o [1]
+bDcRunning              0x2000'09c1    0x1  Data  Gb  ecatslv.o [1]
+bDcSyncActive           0x2000'09c0    0x1  Data  Gb  ecatslv.o [1]
+bEcatFirstOutputsReceived
+                        0x2000'09be    0x1  Data  Gb  ecatslv.o [1]
+bEcatInputUpdateRunning
+                        0x2000'09bd    0x1  Data  Gb  ecatslv.o [1]
+bEcatOutputUpdateRunning
+                        0x2000'09bc    0x1  Data  Gb  ecatslv.o [1]
+bEcatWaitForAlControlRes
+                        0x2000'09c8    0x1  Data  Gb  ecatslv.o [1]
+bEscIntEnabled          0x2000'09c4    0x1  Data  Gb  ecatslv.o [1]
+bInitFinished           0x2000'09ba    0x1  Data  Gb  ecatappl.o [1]
+bLocalErrorFlag         0x2000'09c6    0x1  Data  Gb  ecatslv.o [1]
+bMbxRepeatToggle        0x2000'09d1    0x1  Data  Gb  mailbox.o [1]
+bMbxRunning             0x2000'09d0    0x1  Data  Gb  mailbox.o [1]
+bMinCycleTimeMeasurementStarted
+                        0x2000'09b9    0x1  Data  Gb  ecatappl.o [1]
+bNoMbxMemoryAvailable   0x2000'09d5    0x1  Data  Gb  mailbox.o [1]
+bReceiveMbxIsLocked     0x2000'09ce    0x1  Data  Gb  mailbox.o [1]
+bRunApplication         0x2000'09b8    0x1  Data  Gb  ecatappl.o [1]
+bSendMbxIsFull          0x2000'09cf    0x1  Data  Gb  mailbox.o [1]
+bSmSyncSequenceValid    0x2000'09c2    0x1  Data  Gb  ecatslv.o [1]
+bSyncSetByUser          0x2000'09d6    0x1  Data  Gb  objdef.o [1]
+bWdTrigger              0x2000'09bf    0x1  Data  Gb  ecatslv.o [1]
+cAbortCode               0x800'7d58   0x78  Data  Gb  sdoserv.o [1]
+cBitMask                 0x800'8270   0x20  Data  Gb  objdef.o [1]
+exit                     0x800'82c3    0x4  Code  Gb  exit.o [2]
+free                     0x800'62bd    0x4  Code  Gb  heaptramp0.o [2]
+g_nIOStatus             0x2000'0976    0x2  Data  Gb  AnyID_IO_HL.o [1]
+g_nSysDelay             0x2000'08fc    0x4  Data  Gb  AnyID_SysTick_HL.o [1]
+g_nSysState             0x2000'0000    0x4  Data  Gb  AnyID_SysCfg.o [1]
+g_nSysTick              0x2000'08f8    0x4  Data  Gb  AnyID_SysTick_HL.o [1]
+g_sDIChkStatus          0x2000'087c   0x30  Data  Gb  AnyID_IO.o [1]
+g_sTemoIoState          0x2000'0900    0x4  Data  Gb  Application.o [1]
+i16WaitForPllRunningCnt
+                        0x2000'098a    0x2  Data  Gb  ecatslv.o [1]
+i16WaitForPllRunningTimeout
+                        0x2000'0988    0x2  Data  Gb  ecatslv.o [1]
+init_mparams             0x800'4e3b   0x2c  Code  Lc  dlmalloc.o [2]
+init_top                 0x800'4e67   0x34  Code  Lc  dlmalloc.o [2]
+main                     0x800'82b3   0x10  Code  Gb  main.o [1]
+memcmp                   0x800'6ee5         Code  Gb  memcmp.o [4]
+mparams                 0x2000'08ac   0x18  Data  Lc  dlmalloc.o [2]
+nAlStatus               0x2000'09cc    0x1  Data  Gb  ecatslv.o [1]
+nEcatStateTrans         0x2000'099a    0x2  Data  Gb  ecatslv.o [1]
+nEscAddrInputData       0x2000'09a8    0x2  Data  Gb  ecatslv.o [1]
+nEscAddrOutputData      0x2000'09a6    0x2  Data  Gb  ecatslv.o [1]
+nFileWriteOffset        0x2000'0904    0x4  Data  Gb  bootloaderappl.o [1]
+nMaxEscAddress          0x2000'09a0    0x2  Data  Gb  ecatslv.o [1]
+nMaxSyncMan             0x2000'09cb    0x1  Data  Gb  ecatslv.o [1]
+nPdInputSize            0x2000'099c    0x2  Data  Gb  ecatslv.o [1]
+nPdOutputSize           0x2000'099e    0x2  Data  Gb  ecatslv.o [1]
+nSdoInfoIndex           0x2000'09b6    0x2  Data  Gb  sdoserv.o [1]
+pAPPL_FoeError          0x2000'0920    0x4  Data  Gb  ecatappl.o [1]
+pAPPL_FoeRead           0x2000'0918    0x4  Data  Gb  ecatappl.o [1]
+pAPPL_FoeReadData       0x2000'091c    0x4  Data  Gb  ecatappl.o [1]
+pAPPL_FoeWrite          0x2000'0924    0x4  Data  Gb  ecatappl.o [1]
+pAPPL_FoeWriteData      0x2000'0928    0x4  Data  Gb  ecatappl.o [1]
+pAPPL_MainLoop          0x2000'092c    0x4  Data  Gb  ecatappl.o [1]
+pCoeSendStored          0x2000'0940    0x4  Data  Gb  ecatcoe.o [1]
+pFoeSendStored          0x2000'0950    0x4  Data  Gb  ecatfoe.o [1]
+pSdoInfoObjEntry        0x2000'096c    0x4  Data  Gb  sdoserv.o [1]
+psReadMbx               0x2000'0960    0x4  Data  Gb  mailbox.o [1]
+psRepeatMbx             0x2000'0964    0x4  Data  Gb  mailbox.o [1]
+psStoreMbx              0x2000'0968    0x4  Data  Gb  mailbox.o [1]
+psWriteMbx              0x2000'095c    0x4  Data  Gb  mailbox.o [1]
+sCycleDiag              0x2000'09b4    0x2  Data  Gb  objdef.o [1]
+sEntryDesc0x1000         0x800'8400    0x8  Data  Gb  coeappl.o [1]
+sEntryDesc0x1001         0x800'8408    0x8  Data  Gb  coeappl.o [1]
+sEntryDesc0x1008         0x800'8410    0x8  Data  Gb  coeappl.o [1]
+sEntryDesc0x1009         0x800'8418    0x8  Data  Gb  coeappl.o [1]
+sEntryDesc0x100A         0x800'8420    0x8  Data  Gb  coeappl.o [1]
+sEntryDesc0x10F8         0x800'8428    0x8  Data  Gb  coeappl.o [1]
+sErrorSettings          0x2000'0364    0xc  Data  Gb  objdef.o [1]
+sIdentity               0x2000'0168   0x14  Data  Gb  coeappl.o [1]
+sMbxReceiveQueue        0x2000'0848   0x34  Data  Gb  mailbox.o [1]
+sMbxSendQueue           0x2000'0814   0x34  Data  Gb  mailbox.o [1]
+sRxPDOassign            0x2000'0408    0x4  Data  Gb  SSC-Device.o [1]
+sSyncManInPar           0x2000'07d0   0x44  Data  Gb  objdef.o [1]
+sSyncManOutPar          0x2000'078c   0x44  Data  Gb  objdef.o [1]
+sSyncmanagertype        0x2000'017c    0x8  Data  Gb  coeappl.o [1]
+sTxPDOassign            0x2000'040c    0x4  Data  Gb  SSC-Device.o [1]
+segment_holding          0x800'4e21   0x1a  Code  Lc  dlmalloc.o [2]
+strlen                   0x800'7009         Code  Gb  strlen.o [4]
+u16ALEventMask          0x2000'09aa    0x2  Data  Gb  ecatslv.o [1]
+u16ErrorRegister        0x2000'0978    0x2  Data  Gb  coeappl.o [1]
+u16EscAddrReceiveMbx    0x2000'09b0    0x2  Data  Gb  mailbox.o [1]
+u16EscAddrSendMbx       0x2000'09b2    0x2  Data  Gb  mailbox.o [1]
+u16FileAccessState      0x2000'097e    0x2  Data  Gb  ecatfoe.o [1]
+u16FoeMaxSendBlockSize  0x2000'0980    0x2  Data  Gb  ecatfoe.o [1]
+u16LocalErrorCode       0x2000'0998    0x2  Data  Gb  ecatslv.o [1]
+u16ReceiveMbxSize       0x2000'09ae    0x2  Data  Gb  mailbox.o [1]
+u16SendMbxSize          0x2000'09ac    0x2  Data  Gb  mailbox.o [1]
+u16SmSync0Counter       0x2000'0984    0x2  Data  Gb  ecatslv.o [1]
+u16SmSync0Value         0x2000'0986    0x2  Data  Gb  ecatslv.o [1]
+u32CheckForDcOverrunCnt
+                        0x2000'0910    0x4  Data  Gb  coeappl.o [1]
+u32CycleTimeStartValue  0x2000'0930    0x4  Data  Gb  ecatappl.o [1]
+u32Devicetype           0x2000'0148    0x4  Data  Gb  coeappl.o [1]
+u32FileOffset           0x2000'0948    0x4  Data  Gb  ecatfoe.o [1]
+u32FileSize             0x2000'0908    0x4  Data  Gb  bootloaderappl.o [1]
+u32LastDc32Value        0x2000'090c    0x4  Data  Gb  coeappl.o [1]
+u32LastFileOffset       0x2000'094c    0x4  Data  Gb  ecatfoe.o [1]
+u32MinCycleTimeStartValue
+                        0x2000'0934    0x4  Data  Gb  ecatappl.o [1]
+u32MinCycleTimeValue    0x2000'093c    0x4  Data  Gb  ecatappl.o [1]
+u32PacketNo             0x2000'0944    0x4  Data  Gb  ecatfoe.o [1]
+u32SystemTimeReadFailure
+                        0x2000'0938    0x4  Data  Gb  ecatappl.o [1]
+u32dummy                0x2000'0954    0x4  Data  Gb  ecatslv.o [1]
+u64Timestamp            0x2000'08e8    0x8  Data  Gb  coeappl.o [1]
+u8EcatErrorLed          0x2000'09c9    0x1  Data  Gb  ecatslv.o [1]
+u8EcatRunLed            0x2000'09ca    0x1  Data  Gb  ecatslv.o [1]
+u8MailboxSendReqStored  0x2000'09d4    0x1  Data  Gb  mailbox.o [1]
+u8MbxReadCounter        0x2000'09d3    0x1  Data  Gb  mailbox.o [1]
+u8MbxWriteCounter       0x2000'09d2    0x1  Data  Gb  mailbox.o [1]
+
+
+[1] = E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\Build\Obj
+[2] = dl7M_tlf.a
+[3] = m7M_tls.a
+[4] = rt7M_tl.a
+[5] = shb_l.a
+
+  31'372 bytes of readonly  code memory
+   3'346 bytes of readonly  data memory
+  27'095 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

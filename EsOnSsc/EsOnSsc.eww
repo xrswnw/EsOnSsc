@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspace>
+    <project>
+        <path>$WS_DIR$\..\STBootloader V1.0.2\EsOnSsc\Boot.ewp</path>
+    </project>
+    <project>
+        <path>$WS_DIR$\EsOnSsc.ewp</path>
+    </project>
+    <batchBuild />
+</workspace>
