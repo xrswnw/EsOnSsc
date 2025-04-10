@@ -23,9 +23,9 @@
 
 if ($debugfile -eq "")
 {
-& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\settings\EsOnSsc.Flash.general.xcl" --backend -f "E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\settings\EsOnSsc.Flash.driver.xcl" 
+& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "E:\AnyID\Git\EsOnSsc\EsOnSsc\EsOnSsc\settings\EsOnSsc.Flash.general.xcl" --backend -f "E:\AnyID\Git\EsOnSsc\EsOnSsc\EsOnSsc\settings\EsOnSsc.Flash.driver.xcl" 
 }
 else
 {
-& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\settings\EsOnSsc.Flash.general.xcl" --debug_file=$debugfile --backend -f "E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\settings\EsOnSsc.Flash.driver.xcl" 
+& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "E:\AnyID\Git\EsOnSsc\EsOnSsc\EsOnSsc\settings\EsOnSsc.Flash.general.xcl" --debug_file=$debugfile --backend -f "E:\AnyID\Git\EsOnSsc\EsOnSsc\EsOnSsc\settings\EsOnSsc.Flash.driver.xcl" 
 }

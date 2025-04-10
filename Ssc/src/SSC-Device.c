@@ -301,7 +301,7 @@ void APPL_OutputMapping(UINT16* pData)
 void APPL_Application(void)
 {
 	if(bEcatOutputUpdateRunning)
-		MY_Application(); 
+		App_MonitorDate(); 
 
 }
 

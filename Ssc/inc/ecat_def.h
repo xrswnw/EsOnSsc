@@ -905,7 +905,7 @@ DEVICE_PROFILE_TYPE: Slave device type (Object 0x1000)  */
 /** 
 DEVICE_NAME: Name of the slave device (Object 0x1008) */
 #ifndef DEVICE_NAME
-#define DEVICE_NAME                               "MXB-0320-2200"
+#define DEVICE_NAME                               "EscOnSsc"
 #endif
 
 /** 
@@ -929,7 +929,7 @@ DEVICE_HW_VERSION_LEN: Length of 'DEVICE_HW_VERSION' without '\0' */
 /** 
 DEVICE_SW_VERSION: Software version of the slave device (Object 0x100A) */
 #ifndef DEVICE_SW_VERSION
-#define DEVICE_SW_VERSION                         "1.23"
+#define DEVICE_SW_VERSION                         "1.0"
 #endif
 
 /** 

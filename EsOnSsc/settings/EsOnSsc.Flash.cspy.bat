@@ -25,7 +25,7 @@ if not "%~1" == "" goto debugFile
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\settings\EsOnSsc.Flash.general.xcl" --backend -f "E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\settings\EsOnSsc.Flash.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "E:\AnyID\Git\EsOnSsc\EsOnSsc\EsOnSsc\settings\EsOnSsc.Flash.general.xcl" --backend -f "E:\AnyID\Git\EsOnSsc\EsOnSsc\EsOnSsc\settings\EsOnSsc.Flash.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\settings\EsOnSsc.Flash.general.xcl" "--debug_file=%~1" --backend -f "E:\AnyID\HFReader\Git\EsOnSsc\EsOnSsc\settings\EsOnSsc.Flash.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "E:\AnyID\Git\EsOnSsc\EsOnSsc\EsOnSsc\settings\EsOnSsc.Flash.general.xcl" "--debug_file=%~1" --backend -f "E:\AnyID\Git\EsOnSsc\EsOnSsc\EsOnSsc\settings\EsOnSsc.Flash.driver.xcl" 
 
 @echo off 
 :end

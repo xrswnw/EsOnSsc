@@ -133,14 +133,14 @@ typedef struct flashDevicePar{
 }READER_DEVICE_PARAMETER;
 extern READER_DEVICE_PARAMETER g_sDeviceParamenter;
 
-void Device_Delayms(u32 n);
+void App_Delayms(u32 n);
 
-void Reader_ResetDeviceParamenter(void);
-BOOL Reader_WriteDeviceParamenter(void);
-void Reader_ReadDeviceParamenter(void);
+void App_ResetDeviceParamenter(void);
+BOOL App_WriteDeviceParamenter(void);
+void App_ReadDeviceParamenter(void);
 
-
-
+BOOL App_EcInit();
+void App_MonitorDate();
 
 
 #endif 

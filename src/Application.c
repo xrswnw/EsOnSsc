@@ -4,13 +4,26 @@
 
 
 
-TOBJ7000 g_sTemoIoState = {0};
-
-void MY_Application()
+BOOL App_EcInit()
 {
-	if(memcmp(&DOUnit20x7000, &g_sTemoIoState, sizeof(TOBJ7000)))
-	{
-		DOCH0 = DOUnit20x7000.DO1;
+    BOOL bOk = FALSE;
+    
+    HW_Init();								//PDI过程数据接口初始化
+	MainInit(); 							//主函数初始化，包括ESC和COE	
+	
+    //	ReadCOEParas(UserParaAddr);
+	FoE_APPL_Init();
+	bRunApplication = TRUE;		            //设备处于运行态标志
+    
+    return bOk;
+}
+
+TOBJ7000 g_sLegacyDoData = {0};
+void App_MonitorDate()
+{
+    if(memcmp(&DOUnit20x7000, &g_sLegacyDoData, sizeof(TOBJ7000)))
+    {
+        DOCH0 = DOUnit20x7000.DO1;
 		DOCH1 = DOUnit20x7000.DO2;
 		DOCH2 = DOUnit20x7000.DO3;
 		DOCH3 = DOUnit20x7000.DO4;
@@ -27,9 +40,9 @@ void MY_Application()
 		DOCH13 = DOUnit20x7000.DO14;
 		DOCH14 = DOUnit20x7000.DO15;
 		DOCH15 = DOUnit20x7000.DO16;
-		memcpy(&g_sTemoIoState, &DOUnit20x7000, sizeof(TOBJ7000));
-	}
-    
+		memcpy(&g_sLegacyDoData, &DOUnit20x7000, sizeof(TOBJ7000));
+    }
+
     DIUnit10x6000.DI1 = IO_ChkDiTask(DICH0, 0);
     DIUnit10x6000.DI2 = IO_ChkDiTask(DICH1, 1);
     DIUnit10x6000.DI3 = IO_ChkDiTask(DICH2, 2);
@@ -79,16 +92,28 @@ void GPIO_HW_Init()
 void APPL_CoeTxPdoMapping(u16* pData)
 {
     UINT16 *pInputs = (UINT16 *)pData;
-    //UINT16 *pDiInputs; 
-    
-    //pDiInputs++;
+
 	*pInputs++ = *(&DIUnit10x6000.u16SubIndex0 + 1);
-//	*(&DIUnit10x6000.u16SubIndex0 + 1)= DIArr[0];
 }
 
 void APPL_CoeRxPdoMapping(u16* pData)
 {
-	*(&DOUnit20x7000.u16SubIndex0 + 1)= *pData;
+    u16 index = 0, *pTempParams = NULL;
+    
+    pTempParams = pData;
+    for(index = 0; index < sRxPDOassign.u16SubIndex0; index++)
+    {
+        switch(sRxPDOassign.aEntries[index])
+        {
+            case 0x1600:
+              
+                *(&DOUnit20x7000.u16SubIndex0 + 1)= SWAPWORD(*pTempParams);
+              break;
+            default:
+              
+              break;
+        }
+    }
 }
 
 void TestCalcTimeFun(u8 Cmd, u8 CurSeq)
@@ -105,7 +130,7 @@ void TestCalcTimeFun(u8 Cmd, u8 CurSeq)
 const u8 READER_VERSION[READER_VERSION_SIZE]@0x08005000 = "";
 
 READER_DEVICE_PARAMETER g_sDeviceParamenter = {0};  
-void Device_Delayms(u32 n)
+void App_Delayms(u32 n)
 {
     n *= 0x7FFF;
     n++;
@@ -113,18 +138,18 @@ void Device_Delayms(u32 n)
 }
 
 
-void Reader_ResetDeviceParamenter(void)
+void App_ResetDeviceParamenter(void)
 {
     memset(&g_sDeviceParamenter, 0, sizeof(g_sDeviceParamenter));
 }
 
-BOOL Reader_WriteDeviceParamenter(void)
+BOOL App_WriteDeviceParamenter(void)
 {
     g_sDeviceParamenter.crc = a_GetCrc((u8 *)(&g_sDeviceParamenter), sizeof(g_sDeviceParamenter) - 2);
     return FRam_WriteBuffer(FRAME_INFO_ADDR, sizeof(g_sDeviceParamenter), (u8 *)(&g_sDeviceParamenter));
 }
 
-void Reader_ReadDeviceParamenter(void)
+void App_ReadDeviceParamenter(void)
 {
     BOOL b = FALSE;
     if(FRam_ReadBuffer(FRAME_INFO_ADDR, sizeof(g_sDeviceParamenter), (u8 *)(&g_sDeviceParamenter)))
@@ -140,8 +165,8 @@ void Reader_ReadDeviceParamenter(void)
     
     if(!b)
     {
-        Reader_ResetDeviceParamenter();
-        Reader_WriteDeviceParamenter();
+        App_ResetDeviceParamenter();
+        App_WriteDeviceParamenter();
     }
 
     Fram_ReadBootParamenter();

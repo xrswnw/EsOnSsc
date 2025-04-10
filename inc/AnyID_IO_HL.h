@@ -54,8 +54,6 @@ extern const PORT_INF FMSC_DI_PORT[FMSC_DI_MAX_NUM];
 void IO_Init();
 void IO_Delayms(u32 n);
 
-////
-
 //位带操作,实现51类似的GPIO控制功能
 //具体实现思想,参考<<CM3权威指南>>第五章(87页~92页).M4同M3类似,只是寄存器地址变了.
 //IO口操作宏定义
@@ -88,8 +86,8 @@ void IO_Delayms(u32 n);
 #define PAout(n)                                    BIT_ADDR(GPIOA_ODR_Addr, n)  //输出 
 #define PAin(n)                                     BIT_ADDR(GPIOA_IDR_Addr, n)  //输入 
 
-#define PBout(n)                                    BIT_ADDR(GPIOB_ODR_Addr, n)  //输出 
-#define PBin(n)                                     BIT_ADDR(GPIOB_IDR_Addr, n)  //输入 
+#define PBout(n)                                    BIT_ADDR(GPIOB_ODR_Addr, n)  //输出
+#define PBin(n)                                     BIT_ADDR(GPIOB_IDR_Addr, n)  //输入
 
 #define PCout(n)                                    BIT_ADDR(GPIOC_ODR_Addr, n)  //输出 
 #define PCin(n)                                     BIT_ADDR(GPIOC_IDR_Addr, n)  //输入 

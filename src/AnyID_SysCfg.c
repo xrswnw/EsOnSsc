@@ -18,7 +18,7 @@ void Sys_CfgClock(void)
     u32 StartUpCounter = 0, HSEStatus = 0;
 
 #if (__FPU_PRESENT == 1) && (__FPU_USED == 1)
-    SCB->CPACR |= ((3UL << 10*2)|(3UL << 11*2));  /* set CP10 and CP11 Full Access */
+    SCB->CPACR |= ((3UL << (10 * 2))|(3UL << (11 * 2)));  /* set CP10 and CP11 Full Access */
 #endif
     // Reset the RCC clock configuration to the default reset state
     // Set HSION bit
@@ -158,12 +158,7 @@ void Sys_Init(void)
     RCC_ClocksTypeDef RccClock = {0};
 	RCC_GetClocksFreq(&RccClock);
     
-	HW_Init();								//PDI过程数据接口初始化
-	MainInit(); 							//主函数初始化，包括ESC和COE	
-	
-    //	ReadCOEParas(UserParaAddr);
-	FoE_APPL_Init();
-	bRunApplication = TRUE;		//设备处于运行态标志
+    App_EcInit();
   
     Sys_Delayms(100);
   
@@ -171,6 +166,7 @@ void Sys_Init(void)
 
     IO_Init();
     IO_Test();
+    
     Sys_EnableInt();
     
     //系统空闲状态
@@ -183,20 +179,8 @@ void Sys_LedTask(void)
 {
     if(a_CheckStateBit(g_nSysState, SYS_STAT_RUNLED))
     {
-      /*  u8 index = 0;
-
-        index  = rand() % FMSC_IO_MAX_NUM;
-        
-        if((1 << index) & g_nIOStatus)
-        {
-            IO_CtrOutLow(index);
-        }
-        else
-        {
-            IO_CtrOutHigh(index);
-        }
-        a_ClearStateBit(g_nSysState, SYS_STAT_RUNLED);
-        */
+        //Unit0x8000.tagUidL = ((g_nSysTick + 1));
+        Unit0x8000.tagUidH = ((g_nSysTick - 1));
     }   
 
 }
@@ -206,7 +190,7 @@ void Sys_EspAppTask()
     if(bRunApplication)
     {
         MainLoop();
-        MY_Application();	//档频却齇B初始化完成
+        App_MonitorDate();              //实际可能重复调用。 可在运行模式且数据更新自动输出时关闭
     }
     else
     {

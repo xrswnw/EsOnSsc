@@ -47,7 +47,7 @@ void SysTick_Handler(void)
 
     g_nSysTick++;
     
-    if(g_nSysTick % 201 == 0x00)
+    if(g_nSysTick % 21 == 0x00)
     {
         a_SetState(g_nSysState, SYS_STAT_RUNLED);
     }

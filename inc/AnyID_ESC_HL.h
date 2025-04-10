@@ -18,7 +18,7 @@ extern const PORT_INF ESC_CS;
 #define ESC_INT_PIN_SOURCE      EXTI_PinSource2
 #define ESC_INT_IRQn      	    EXTI2_IRQn
 #define ESC_ACK_ESC_INT         {EXTI_ClearITPendingBit(ESC_INT_EXTI);}//清除LINE0上的中断标志位  
-#define ESC_INTIRQHandler       EXTI2_IRQHandler
+#define Esc_IntIRQHandler       EXTI2_IRQHandler
 
 extern const PORT_INF ESC_SYNC0;
 #define ESC_SYNC0_PORT_SOURCE       EXTI_PortSourceGPIOA
@@ -36,7 +36,7 @@ extern const PORT_INF ESC_SYNC1;
 #define ESC_SYNC1_PIN_SOURCE        EXTI_PinSource1
 #define ESC_SYNC1_IRQn              EXTI1_IRQn
 #define ESC_ACK_SYNC1_INT           {EXTI_ClearITPendingBit(ESC_SYNC1_EXTI);}//清除LINE0上的中断标志位  
-#define ESC_SYNC1IR1Handler         EXTI1_IRQHandler
+#define ESC_SYNC1IRQHandler         EXTI1_IRQHandler
 
 void Esc_InitInterface(void);
 u8 Esc_WriteByte(u8 byte);

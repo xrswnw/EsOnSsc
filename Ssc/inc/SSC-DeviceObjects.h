@@ -553,7 +553,60 @@ PROTO TOBJ7000 DOUnit20x7000
 ;
 /** @}*/
 
+/******************************************************************************
+*                    Object 0x8000 : Tag Info
+******************************************************************************/
+/**
+* \addtogroup 0x8000
+* @{
+* \brief Object 0x8000 definition
+*/
+#ifdef _OBJD_
+/**
+* \brief Object entry descriptions<br>
+* <br>
+* SubIndex 0<br>
+* SubIndex 1 - DO 1<br>
 
+*/
+OBJCONST TSDOINFOENTRYDESC    OBJMEM asEntryDesc0x8000[] = {
+{ DEFTYPE_UNSIGNED8 , 0x8 , ACCESS_READ },
+{ DEFTYPE_UNSIGNED8 , 0x8 , ACCESS_READWRITE | OBJACCESS_TXPDOMAPPING }, /* Tag Status */
+{ DEFTYPE_UNSIGNED32 , 0x20, ACCESS_READWRITE | OBJACCESS_TXPDOMAPPING }, /*Tag Uid */
+{ DEFTYPE_UNSIGNED32 , 0x20, ACCESS_READWRITE | OBJACCESS_TXPDOMAPPING }, /*Tag Uid */
+}; 
+
+/**
+* \brief Object/Entry names
+*/
+OBJCONST UCHAR OBJMEM aName0x8000[] ="Tag Info\000"
+"Tag Status\000"
+"Tag UidL\000"
+"Tag UidH\000";
+#endif //#ifdef _OBJD_
+
+#ifndef _SSC_DEVICE_OBJECTS_H_
+/**
+* \brief Object structure
+*/
+typedef struct OBJ_STRUCT_PACKED_START {
+    UINT16 TagInfo;
+    UINT8 tagStatus;
+    UINT32 tagUidL;
+    UINT32 tagUidH;
+} OBJ_STRUCT_PACKED_END
+TOBJ8000;
+#endif //#ifndef _SSC_DEVICE_OBJECTS_H_
+
+/**
+* \brief Object variable
+*/
+PROTO TOBJ8000 Unit0x8000
+#if defined(_SSC_DEVICE_) && (_SSC_DEVICE_ == 1)
+={0x03, 0x80, 0, 0}
+#endif
+;
+/** @}*/
 
 /******************************************************************************
 *                    Object 0xF008 : Parameters Handing
@@ -616,6 +669,65 @@ PROTO TOBJF008 ParametersHanding0xF008
 
 
 
+//--New_Obj------------//
+/**
+* \addtogroup 0xF008 0xF008 | Parameters Handing
+* @{
+* \brief Object 0xF008 (Parameters Handing) definition
+*/
+#ifdef _OBJD_
+/**
+* \brief Object entry descriptions<br>
+* <br>
+* SubIndex 0<br>
+* SubIndex 1 - Save Current Parameters<br>
+* SubIndex 2 - Restore Default Parameters<br>
+* SubIndex 3 - Checksum<br>
+* SubIndex 4 - Vendor Reserve<br>
+*/
+OBJCONST TSDOINFOENTRYDESC    OBJMEM asEntryDesc0xF010[] = {
+{ DEFTYPE_UNSIGNED8 , 0x8 , ACCESS_READ },
+{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE }, /* Subindex1 */
+{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE }, /* Subindex2*/
+{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE }, /* Subindex3*/
+{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE }}; /* Subindex4*/
+
+/**
+* \brief Object/Entry names
+*/
+OBJCONST UCHAR OBJMEM aName0xF010[] = 
+"Parameters Handing\000"
+"Params1\000"
+"Params2\000"
+"Params3\000"
+"Params4\000\377";
+#endif //#ifdef _OBJD_
+
+#ifndef _SSC_DEVICE_OBJECTS_H_
+/**
+* \brief Object structure
+*/
+typedef struct OBJ_STRUCT_PACKED_START {
+UINT16 u16SubIndex0;
+UINT16 Params1; /* Subindex1 - Save Current Parameters */
+UINT16 Params2; /* Subindex2 - Restore Default Parameters */
+UINT16 Params3; /* Subindex3 - Checksum */
+UINT16 Params4; /* Subindex4 - Vendor Reserve */
+} OBJ_STRUCT_PACKED_END
+TOBJF010;
+#endif //#ifndef _SSC_DEVICE_OBJECTS_H_
+
+/**
+* \brief Object variable
+*/
+PROTO TOBJF010 ParametersHanding0xF010
+#if defined(_SSC_DEVICE_) && (_SSC_DEVICE_ == 1)
+={4,0x0000,0x0000,0x0000,0x0000}
+#endif
+;
+/** @}*/
+
+
 
 
 
@@ -634,8 +746,12 @@ TOBJECT    OBJMEM ApplicationObjDic[] = {
 {NULL , NULL ,  0x6000 , {DEFTYPE_RECORD , 16 | (OBJCODE_REC << 8)} , asEntryDesc0x6000 , aName0x6000 , &DIUnit10x6000 , NULL , NULL , 0x0000 },
 /* Object 0x7000 */
 {NULL , NULL ,  0x7000 , {DEFTYPE_RECORD , 16 | (OBJCODE_REC << 8)} , asEntryDesc0x7000 , aName0x7000 , &DOUnit20x7000 , NULL , NULL , 0x0000 },
+/* Object 0x8000 */
+{NULL , NULL ,  0x8000 , {DEFTYPE_RECORD , 3 | (OBJCODE_REC << 8)} , asEntryDesc0x8000 , aName0x8000 , &Unit0x8000 , NULL , NULL , 0x0000 },
 /* Object 0xF008 */
 {NULL , NULL ,  0xF008 , {DEFTYPE_RECORD , 4 | (OBJCODE_REC << 8)} , asEntryDesc0xF008 , aName0xF008 , &ParametersHanding0xF008 , NULL , NULL , 0x0000 },
+/* Object 0xF010 */
+{NULL , NULL ,  0xF010 , {DEFTYPE_RECORD , 4 | (OBJCODE_REC << 8)} , asEntryDesc0xF010 , aName0xF010 , &ParametersHanding0xF010 , NULL , NULL , 0x0000 },
 {NULL,NULL, 0xFFFF, {0, 0}, NULL, NULL, NULL, NULL}};
 #endif    //#ifdef _OBJD_
 #undef PROTO
